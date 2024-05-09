@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>mundo</groupId>
+    <artifactId>cdh-spark</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>boot-demo</module>
+        <module>zhipuai</module>
+        <!--        <module>etl-spark-test</module>-->
+<!--        <module>flink-project</module>-->
+<!--        <module>kafka-project</module>-->
+<!--        <module>storm-project</module>-->
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+
+        <!-- Common libs -->
+        <!--        <spark.version>2.4.6</spark.version>-->
+        <spark.version>3.0.1</spark.version>
+        <hadoop-yarn-server-resourcemanager>3.1.1</hadoop-yarn-server-resourcemanager>
+        <scala.binary.version>2.12</scala.binary.version>
+
+        <!-- see comment below... This fixes an annoyance with intellij -->
+        <provided.scope>provided</provided.scope>
+        <hbase.version>0.98.4-hadoop2</hbase.version>
+        <storm.version>1.0.2</storm.version>
+
+        <clojure.version>1.7.0</clojure.version>
+        <java_jmx.version>0.3.1</java_jmx.version>
+        <compojure.version>1.1.9</compojure.version>
+        <hiccup.version>0.3.6</hiccup.version>
+        <commons-compress.version>1.4.1</commons-compress.version>
+        <commons-io.version>2.5</commons-io.version>
+        <commons-lang.version>2.5</commons-lang.version>
+        <commons-exec.version>1.1</commons-exec.version>
+        <commons-fileupload.version>1.3.2</commons-fileupload.version>
+        <commons-codec.version>1.6</commons-codec.version>
+        <commons-cli.version>1.3.1</commons-cli.version>
+        <clj-time.version>0.8.0</clj-time.version>
+        <curator.version>2.10.0</curator.version>
+        <json-simple.version>1.1</json-simple.version>
+        <ring.version>1.3.1</ring.version>
+        <ring-json.version>0.3.1</ring-json.version>
+        <jetty.version>7.6.13.v20130916</jetty.version>
+        <clojure.tools.logging.version>0.2.3</clojure.tools.logging.version>
+        <clojure.math.numeric-tower.version>0.0.1</clojure.math.numeric-tower.version>
+        <carbonite.version>1.5.0</carbonite.version>
+        <snakeyaml.version>1.11</snakeyaml.version>
+        <httpclient.version>4.3.3</httpclient.version>
+        <clojure.tools.cli.version>0.2.4</clojure.tools.cli.version>
+        <disruptor.version>3.3.2</disruptor.version>
+        <jgrapht.version>0.9.0</jgrapht.version>
+        <guava.version>16.0.1</guava.version>
+        <netty.version>3.9.0.Final</netty.version>
+        <log4j-over-slf4j.version>1.6.6</log4j-over-slf4j.version>
+        <log4j.version>2.1</log4j.version>
+        <slf4j.version>1.7.7</slf4j.version>
+        <metrics.version>3.1.0</metrics.version>
+        <clojure.tools.nrepl.version>0.2.3</clojure.tools.nrepl.version>
+        <clojure-complete.version>0.2.3</clojure-complete.version>
+        <mockito.version>1.9.5</mockito.version>
+        <conjure.version>2.1.3</conjure.version>
+        <zookeeper.version>3.4.6</zookeeper.version>
+        <clojure-data-codec.version>0.1.0</clojure-data-codec.version>
+        <clojure-contrib.version>1.2.0</clojure-contrib.version>
+        <hive.version>0.14.0</hive.version>
+        <hadoop.version>2.6.1</hadoop.version>
+        <hbase.version>1.1.0</hbase.version>
+        <kryo.version>3.0.3</kryo.version>
+        <servlet.version>2.5</servlet.version>
+        <joda-time.version>2.3</joda-time.version>
+        <thrift.version>0.9.3</thrift.version>
+        <junit.version>4.12</junit.version>
+        <metrics-clojure.version>2.5.1</metrics-clojure.version>
+        <hdrhistogram.version>2.1.7</hdrhistogram.version>
+        <calcite.version>1.4.0-incubating</calcite.version>
+        <jackson.version>2.6.3</jackson.version>
+        <maven-surefire.version>2.18.1</maven-surefire.version>
+        <!-- Kafka version used by old storm-kafka spout code -->
+        <storm.kafka.version>0.8.2.1</storm.kafka.version>
+        <storm.kafka.artifact.id>kafka_2.10</storm.kafka.artifact.id>
+
+        <!-- kafka version used by new storm-kafka-client spout code -->
+        <storm.kafka.client.version>0.9.0.1</storm.kafka.client.version>
+        <mysql-connector.version>8.0.15</mysql-connector.version>
+        <zhipuai-version>release-V4-2.0.2</zhipuai-version>
+    </properties>
+
+</project>
