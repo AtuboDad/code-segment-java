@@ -52,11 +52,7 @@ public class TestController {
     public Result redis(String type, String message) {
         String token = tokenService.createToken();
         if (CharSequenceUtil.isNotEmpty(token)) {
-            Result result = new Result();
-            result.setCode(ResultEnum.SUCCESS.getCode());
-            result.setMessage(Constants.SUCCESS);
-            result.setData(token);
-            return result;
+            return new Result(ResultEnum.SUCCESS.getCode(), Constants.SUCCESS, token);
         }
         return Result.success();
 
