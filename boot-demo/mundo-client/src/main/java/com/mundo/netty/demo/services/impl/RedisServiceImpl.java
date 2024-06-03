@@ -49,4 +49,17 @@ public class RedisServiceImpl implements RedisService {
         });
     }
 
+    @Override
+    public boolean setnx(String key, String val) {
+        return Boolean.TRUE.equals(redisTemplate.opsForValue().setIfAbsent(key, val, 3, TimeUnit.MINUTES));
+    }
+
+    @Override
+    public Long delnx(String key, String val) {
+        // 指定 lua 脚本，并且指定返回值类型
+        DefaultRedisScript<Long> redisScript = new DefaultRedisScript<>(RELEASE_LOCK_LUA_SCRIPT, Long.class);
+        // 参数一：redisScript，参数二：key列表，参数三：arg（可多个）
+        return (Long) redisTemplate.execute(redisScript, Collections.singletonList(key), val);
+    }
+
 }
