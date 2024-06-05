@@ -9,7 +9,7 @@
         <artifactId>demo</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>common</artifactId>
+    <artifactId>mundo-common</artifactId>
 
     <description>
         common通用工具

@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>mundo</groupId>
-        <artifactId>cdh-spark</artifactId>
+        <artifactId>work-apache-project</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
