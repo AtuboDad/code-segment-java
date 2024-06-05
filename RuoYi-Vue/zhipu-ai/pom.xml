@@ -15,10 +15,6 @@
         ai模块
     </description>
 
-    <properties>
-        <zhipuai-version>release-V4-2.0.2</zhipuai-version>
-    </properties>
-
     <dependencies>
 
         <!-- 通用工具-->
